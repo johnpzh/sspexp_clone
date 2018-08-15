@@ -1,5 +1,5 @@
 # sspexp
-Clone from the http://degroup.cis.umac.mo/sspexp/ (v1.0 updated on Jan-02-2018), the implementation of the VLDB'17 paper An Experimental Study on Hub Labeling based Shortest Path Algorithms [1].
+Clone from http://degroup.cis.umac.mo/sspexp/ (v1.0 updated on Jan-02-2018), the implementation of the VLDB'17 paper An Experimental Study on Hub Labeling based Shortest Path Algorithms [1].
 
 References
 ----------
