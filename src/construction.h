@@ -146,8 +146,16 @@ public:
 			usd[r] = true;
 		}
 
+		// Added by Johnpzh 02/13/2019
+		uint64_t amount = 0;
+		// Ended by Johnpzh
 		for (size_t v = 0; v < numOfVertices; ++v) {
 			NodeID k = tmp_idx[v].first.size();
+
+			// Added by Johnpzh 02/13/2019
+			amount += k - 1;
+			// Ended by Johnpzh
+
 			index_[inv[v]].spt_v.resize(k);
 			index_[inv[v]].spt_d.resize(k);
 			for (NodeID i = 0; i < k; ++i) index_[inv[v]].spt_v[i] = tmp_idx[v].first[i];
@@ -157,6 +165,10 @@ public:
 			tmp_idx[v].first.shrink_to_fit();
 			tmp_idx[v].second.shrink_to_fit();
 		}
+		// Added by Johnpzh 02/13/2019
+//		amount = (double)(amount) / 2;
+		cout << "avg label size:" << (double)(amount)/(double)numOfVertices << endl;
+		// Ended by Johnpzh
 	}
 
 	PL(Graph &graph, Ordering &orders, bool D_FLAGS) {
@@ -318,8 +330,16 @@ public:
 			usd[r] = true;
 		}
 
+		// Added by Johnpzh 02/13/2019
+		uint64_t amount = 0;
+		// Ended by Johnpzh
 		for (size_t v = 0; v < numOfVertices; ++v) {
 			NodeID k = tmp_idx[v].first.size();
+
+			// Added by Johnpzh 02/13/2019
+			amount += k;
+			// Ended by Johnpzh
+
 			index_[inv[v]].spt_v.resize(k);
 			index_[inv[v]].spt_d.resize(k);
 			for (NodeID i = 0; i < k; ++i) index_[inv[v]].spt_v[i] = tmp_idx[v].first[i];
@@ -331,6 +351,11 @@ public:
 			tmp_idx[v].second.shrink_to_fit();
 
 			k = r_tmp_idx[v].first.size();
+
+			// Added by Johnpzh 02/13/2019
+			amount += k;
+			// Ended by Johnpzh
+
 			bindex_[inv[v]].spt_v.resize(k);
 			bindex_[inv[v]].spt_d.resize(k);
 			for (NodeID i = 0; i < k; ++i) bindex_[inv[v]].spt_v[i] = r_tmp_idx[v].first[i];
@@ -341,7 +366,10 @@ public:
 			r_tmp_idx[v].first.shrink_to_fit();
 			r_tmp_idx[v].second.shrink_to_fit();
 		}
-
+		// Added by Johnpzh 02/13/2019
+		amount = (double)(amount) / 2;
+		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		// Ended by Johnpzh
 
 	}
 	
@@ -1063,8 +1091,16 @@ public:
 			usd[r] = true;
 		}
 
+		// Added by Johnpzh 02/13/2019
+		uint64_t amount = 0;
+		// Ended by Johnpzh
 		for (size_t v = 0; v < numOfVertices; ++v) {
 			NodeID k = tmp_idx[v].first.size();
+
+			// Added by Johnpzh 02/13/2019
+			amount += k - 1;
+			// Ended by Johnpzh
+
 			//index_[inv[v]].spt_v.resize(k);
 			//index_[inv[v]].spt_d.resize(k);
 			index_[inv[v]].spt_v = (NodeID*)memalign(64, k * sizeof(NodeID));
@@ -1077,6 +1113,10 @@ public:
 			tmp_idx[v].first.shrink_to_fit();
 			tmp_idx[v].second.shrink_to_fit();
 		}
+		// Added by Johnpzh 02/13/2019
+//		amount = (double)(amount) / 2;
+		cout << "avg label size:" << (double)(amount)/(double)numOfVertices << endl;
+		// Ended by Johnpzh
 	}
 
 	BPL(Graph &graph, Ordering &orders, bool directed_flags) {
@@ -1576,9 +1616,16 @@ public:
 			usd[r] = true;
 		}
 
-
+		// Added by Johnpzh 02/13/2019
+		uint64_t amount = 0;
+		// Ended by Johnpzh
 		for (size_t v = 0; v < numOfVertices; ++v) {
 			NodeID k = tmp_idx[v].first.size();
+
+			// Added by Johnpzh 02/13/2019
+			amount += k;
+			// Ended by Johnpzh
+
 			//index_[inv[v]].spt_v.resize(k);
 			//index_[inv[v]].spt_d.resize(k);
 			index_[inv[v]].spt_v = (NodeID*)memalign(64, k * sizeof(NodeID));
@@ -1593,6 +1640,11 @@ public:
 
 
 			k = r_tmp_idx[v].first.size();
+
+			// Added by Johnpzh 02/13/2019
+			amount += k;
+			// Ended by Johnpzh
+
 			//index_[inv[v]].spt_v.resize(k);
 			//index_[inv[v]].spt_d.resize(k);
 			bindex_[inv[v]].spt_v = (NodeID*)memalign(64, k * sizeof(NodeID));
@@ -1606,6 +1658,10 @@ public:
 			r_tmp_idx[v].second.shrink_to_fit();
 
 		}
+		// Added by Johnpzh 02/13/2019
+		amount = (double)(amount) / 2;
+		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		// Ended by Johnpzh
 	
 }
 };
@@ -1863,8 +1919,16 @@ public:
 			usd[r] = true;
 		}
 
+		// Added by Johnpzh 02/13/2019
+		uint64_t amount = 0;
+		// Ended by Johnpzh
 		for (size_t v = 0; v < numOfVertices; ++v) {
 			NodeID k = tmp_idx[v].first.size();
+
+			// Added by Johnpzh 02/13/2019
+			amount += k - 1;
+			// Ended by Johnpzh
+
 			index_[inv[v]].spt_v.resize(k);
 			index_[inv[v]].spt_d.resize(k);
 			index_[inv[v]].spt_p.resize(k);
@@ -1876,6 +1940,10 @@ public:
 			tmp_idx_parent[v].first.clear();
 			tmp_idx_parent[v].second.clear();
 		}
+		// Added by Johnpzh 02/13/2019
+		amount = (double)(amount) / 2;
+		cout << "avg label size:" << (double)(amount)/(double)numOfVertices << endl;
+		// Ended by Johnpzh
 	}
 
 
@@ -2064,8 +2132,16 @@ public:
 			usd[r] = true;			
 		}
 
+		// Added by Johnpzh 02/13/2019
+		uint64_t amount = 0;
+		// Ended by Johnpzh
 		for (size_t v = 0; v < numOfVertices; ++v) {
 			NodeID k = tmp_idx[v].first.size();
+
+			// Added by Johnpzh 02/13/2019
+			amount += k;
+			// Ended by Johnpzh
+
 			index_[inv[v]].spt_v.resize(k);
 			index_[inv[v]].spt_d.resize(k);
 			for (NodeID i = 0; i < k; ++i) index_[inv[v]].spt_v[i] = tmp_idx[v].first[i];
@@ -2076,6 +2152,11 @@ public:
 			tmp_idx[v].second.shrink_to_fit();
 
 			k = r_tmp_idx[v].first.size();
+
+			// Added by Johnpzh 02/13/2019
+			amount += k;
+			// Ended by Johnpzh
+
 			bindex_[inv[v]].spt_v.resize(k);
 			bindex_[inv[v]].spt_d.resize(k);
 			for (NodeID i = 0; i < k; ++i) bindex_[inv[v]].spt_v[i] = r_tmp_idx[v].first[i];
@@ -2085,6 +2166,10 @@ public:
 			r_tmp_idx[v].first.shrink_to_fit();
 			r_tmp_idx[v].second.shrink_to_fit();	
 		}
+		// Added by Johnpzh 02/13/2019
+		amount = (double)(amount) / 2;
+		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		// Ended by Johnpzh
 
 	}
 	
@@ -2301,8 +2386,16 @@ public:
 			usd[r] = true;			
 		}
 
+		// Added by Johnpzh 02/13/2019
+		uint64_t amount = 0;
+		// Ended by Johnpzh
 		for (size_t v = 0; v < numOfVertices; ++v) {
 			NodeID k = tmp_idx[v].first.size();
+
+			// Added by Johnpzh 02/13/2019
+			amount += k;
+			// Ended by Johnpzh
+
 			index_[inv[v]].spt_v.resize(k);
 			index_[inv[v]].spt_d.resize(k);
 			index_[inv[v]].spt_p.resize(k);
@@ -2320,6 +2413,11 @@ public:
 			tmp_idx_parent[v].second.shrink_to_fit();
 
 			k = r_tmp_idx[v].first.size();
+
+			// Added by Johnpzh 02/13/2019
+			amount += k;
+			// Ended by Johnpzh
+
 			bindex_[inv[v]].spt_v.resize(k);
 			bindex_[inv[v]].spt_d.resize(k);
 			bindex_[inv[v]].spt_p.resize(k);
@@ -2337,6 +2435,10 @@ public:
 			r_tmp_idx_parent[v].first.shrink_to_fit();
 			r_tmp_idx_parent[v].second.shrink_to_fit();
 		}
+		// Added by Johnpzh 02/13/2019
+		amount = (double)(amount) / 2;
+		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		// Ended by Johnpzh
 
 	}
 		

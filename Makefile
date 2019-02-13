@@ -1,4 +1,5 @@
-CXX = g++
+#CXX = g++
+CXX = icpc
 CXXFLAGS = -g -w -Wall -Wextra -O3  -std=c++14 -fopenmp
 LIB = -I./include
 
