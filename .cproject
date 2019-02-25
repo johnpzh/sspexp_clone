@@ -29,7 +29,7 @@
             			
             <storageModule moduleId="cdtBuildSystem" version="4.0.0">
                 				
-                <configuration buildProperties="" id="cdt.managedbuild.toolchain.gnu.base.1521362439" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+                <configuration buildProperties="" id="cdt.managedbuild.toolchain.gnu.base.1521362439" name="Default" optionalBuildProperties="" parent="org.eclipse.cdt.build.core.emptycfg">
                     					
                     <folderInfo id="cdt.managedbuild.toolchain.gnu.base.1521362439.320880938" name="/" resourcePath="">
                         						
@@ -41,15 +41,37 @@
                             							
                             <tool id="cdt.managedbuild.tool.gnu.archiver.base.869778331" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
                             							
-                            <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.2054160663" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base"/>
+                            <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.2054160663" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1328262978" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                                							
+                            </tool>
                             							
-                            <tool id="cdt.managedbuild.tool.gnu.c.compiler.base.1714250618" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base"/>
+                            <tool id="cdt.managedbuild.tool.gnu.c.compiler.base.1714250618" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1193806957" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                                							
+                            </tool>
                             							
                             <tool id="cdt.managedbuild.tool.gnu.c.linker.base.1899462817" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
                             							
-                            <tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1376228845" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base"/>
+                            <tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1376228845" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1832087115" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                							
+                            </tool>
                             							
-                            <tool id="cdt.managedbuild.tool.gnu.assembler.base.1300089987" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base"/>
+                            <tool id="cdt.managedbuild.tool.gnu.assembler.base.1300089987" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.330207809" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                                							
+                            </tool>
                             						
                         </toolChain>
                         					
@@ -78,5 +100,7 @@
     </storageModule>
     	
     <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    	
+    <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
     
 </cproject>

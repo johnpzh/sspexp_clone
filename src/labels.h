@@ -2044,7 +2044,7 @@ public:
 	}
 
 	void print_stat() {
-		cout << "Average Label Size: " << avg_size() << endl;
+		cout << "Average_label_size: " << avg_size() << endl;
 		//cout << "Maximum Label Size: " << max_size() << endl;
 	}
 
@@ -2935,7 +2935,7 @@ public:
 	}
 
 	void print_stat() {
-		cout << "Average Label Size: " << avg_size() << endl;
+		cout << "Average_label_size: " << avg_size() << endl;
 		//cout << "Maximum Label Size: " << max_size() << endl;
 	}
 
@@ -3319,7 +3319,7 @@ public:
 	}
 
 	void print_stat() {
-		cout << "Average Label Size: " << avg_size() << endl;
+		cout << "Average_label_size: " << avg_size() << endl;
 		//cout << "Maximum Label Size: " << max_size() << endl;
 	}
 
@@ -3801,7 +3801,7 @@ public:
 	}
 
 	void print_stat() {
-		cout << "Average Label Size: " << avg_size() << endl;
+		cout << "Average_label_size: " << avg_size() << endl;
 		//cout << "Maximum Label Size: " << max_size() << endl;
 	}
 
@@ -4118,7 +4118,7 @@ public:
 	}*/
 
 	void print_stat() {
-		cout << "Average Label Size: " << avg_size() << endl;
+		cout << "Average_label_size: " << avg_size() << endl;
 		//cout << "Maximum Label Size: " << max_size() << endl;
 	}
 
@@ -4410,7 +4410,7 @@ public:
 
 
 	void print_stat() {
-		cout << "Average Label Size: " << avg_size() << endl;
+		cout << "Average_label_size: " << avg_size() << endl;
 		//cout << "Maximum Label Size: " << max_size() << endl;
 	}
 

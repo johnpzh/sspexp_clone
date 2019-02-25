@@ -167,7 +167,7 @@ public:
 		}
 		// Added by Johnpzh 02/13/2019
 //		amount = (double)(amount) / 2;
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices << endl;
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices << endl;
 		// Ended by Johnpzh
 	}
 
@@ -368,7 +368,7 @@ public:
 		}
 		// Added by Johnpzh 02/13/2019
 		amount = (double)(amount) / 2;
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices - 1 << endl;
 		// Ended by Johnpzh
 
 	}
@@ -1115,7 +1115,7 @@ public:
 		}
 		// Added by Johnpzh 02/13/2019
 //		amount = (double)(amount) / 2;
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices << endl;
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices << endl;
 		// Ended by Johnpzh
 	}
 
@@ -1660,7 +1660,7 @@ public:
 		}
 		// Added by Johnpzh 02/13/2019
 		amount = (double)(amount) / 2;
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices - 1 << endl;
 		// Ended by Johnpzh
 	
 }
@@ -1802,7 +1802,7 @@ public:
 			tmp_idx[v].first.shrink_to_fit();
 			tmp_idx[v].second.shrink_to_fit();
 		}
-		cout << "Average Label Size:" << count / numOfVertices << endl;
+		cout << "Average_label_size: " << count / numOfVertices << endl;
 		
 	}
 
@@ -1942,7 +1942,7 @@ public:
 		}
 		// Added by Johnpzh 02/13/2019
 		amount = (double)(amount) / 2;
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices << endl;
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices << endl;
 		// Ended by Johnpzh
 	}
 
@@ -2168,7 +2168,7 @@ public:
 		}
 		// Added by Johnpzh 02/13/2019
 		amount = (double)(amount) / 2;
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices - 1 << endl;
 		// Ended by Johnpzh
 
 	}
@@ -2437,7 +2437,7 @@ public:
 		}
 		// Added by Johnpzh 02/13/2019
 		amount = (double)(amount) / 2;
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices - 1 << endl;
 		// Ended by Johnpzh
 
 	}
@@ -3777,7 +3777,7 @@ public:
 			tmp_idx[v].first.shrink_to_fit();
 			tmp_idx[v].second.shrink_to_fit();
 		}
-		cout << "Average Label Size:" << count / numOfVertices << endl;
+		cout << "Average_label_size: " << count / numOfVertices << endl;
 		*/
 		
 	}

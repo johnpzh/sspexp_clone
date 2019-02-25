@@ -1211,7 +1211,7 @@ class Coverage_Ordering_BP : public COrdering_BP {
 			tmp_idx[v].second.shrink_to_fit();
 		}
 		
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices - 1 << endl;
 
 	}
 
@@ -1449,7 +1449,7 @@ class Coverage_Ordering_BP : public COrdering_BP {
 		
 		
 		amount = (double)(amount) / 2;
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices - 1 << endl;
 	}
 	
 	Coverage_Ordering_BP(Graph& graph, vector<NodeID> border){

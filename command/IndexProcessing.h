@@ -125,7 +125,7 @@ namespace command{
                             Degree_Ordering degree_order(wgraph);
                             PL_W pl_w(wgraph, degree_order, DIRECTED_FLAG);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -139,7 +139,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Betweenness_Ordering betweenness_ordering(16, beta, wgraph, numOfVertices);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -152,7 +152,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Coverage_Ordering coverage_ordering(wgraph, DIRECTED_FLAG, true);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -169,7 +169,7 @@ namespace command{
                             Degree_Ordering degree_order(graph);
                             PL pl(graph, degree_order, DIRECTED_FLAG);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -183,7 +183,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Betweenness_Ordering betweenness_ordering(16, beta, graph, numOfVertices);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -196,7 +196,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Coverage_Ordering coverage_ordering(graph, DIRECTED_FLAG);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -209,13 +209,15 @@ namespace command{
                         }
                     }
                 }else{
+                	// Undirected Graph
                     if( WEIGHTED_FLAG == true){
                         if(t_ordering_flag == 0){
+                        	// Weighted PLL
                             double _labeling_time = GetCurrentTimeSec();
                             Degree_Ordering degree_order(wgraph);
                             PL_W pl_w(wgraph, degree_order);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -229,7 +231,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Betweenness_Ordering betweenness_ordering(16, beta, wgraph, numOfVertices);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -242,7 +244,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Coverage_Ordering coverage_ordering(wgraph);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -259,7 +261,7 @@ namespace command{
                             Degree_Ordering degree_order(graph);
                             PL pl(graph, degree_order);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -273,7 +275,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Betweenness_Ordering betweenness_ordering(16, beta, graph, numOfVertices);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -287,7 +289,7 @@ namespace command{
                             vector<NodeID> border(numOfVertices);
                             Coverage_Ordering coverage_ordering(graph, border);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -308,7 +310,7 @@ namespace command{
 	                        Degree_Ordering degree_order(wgraph);
                             PL_W pl_w(wgraph, degree_order, true, true,true);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -322,7 +324,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Betweenness_Ordering betweenness_ordering(16, beta, wgraph, numOfVertices, true);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -335,7 +337,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                         	Coverage_Ordering_Path coverage_ordering(wgraph, DIRECTED_FLAG);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -352,7 +354,7 @@ namespace command{
                         	Degree_Ordering degree_order(graph);
                             PL pl(graph, degree_order, true, true);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -366,7 +368,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Betweenness_Ordering betweenness_ordering(16, beta, graph, numOfVertices, true);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -379,7 +381,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Coverage_Ordering_Path coverage_ordering(graph, DIRECTED_FLAG);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -398,7 +400,7 @@ namespace command{
                             Degree_Ordering degree_order(wgraph);
                             PL_W pl_w(wgraph, degree_order, true, true);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -412,7 +414,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Betweenness_Ordering betweenness_ordering(16, beta, wgraph, numOfVertices, true);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -425,7 +427,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Coverage_Ordering_Path coverage_ordering(wgraph);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -442,7 +444,7 @@ namespace command{
                             Degree_Ordering degree_order(graph);
                             PL pl(graph, degree_order, true, false);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -456,7 +458,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Betweenness_Ordering betweenness_ordering(16, beta, graph, numOfVertices, true);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -470,7 +472,7 @@ namespace command{
                             vector<NodeID> border(numOfVertices);
                             Coverage_Ordering_Path coverage_ordering(graph, border);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -494,7 +496,7 @@ namespace command{
                             Degree_Ordering degree_order(graph);
                             BPL<50> bpl(graph, degree_order, DIRECTED_FLAG);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string labelFile(labelFileName);
                             labelFile.append(".label");
@@ -504,7 +506,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             BP_Betweenness_Ordering<50> betweenness_ordering(16, beta, graph, numOfVertices);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string labelFile(labelFileName);
                             labelFile.append(".label");
@@ -514,7 +516,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                             Coverage_Ordering_BP<50> coverage_ordering(graph, DIRECTED_FLAG);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string labelFile(labelFileName);
                             labelFile.append(".label");
@@ -532,7 +534,7 @@ namespace command{
                             Degree_Ordering degree_order(graph);
                             BPL<50> bpl(graph, degree_order);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string labelFile(labelFileName);
                             labelFile.append(".label");
@@ -542,7 +544,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
 	                        BP_Betweenness_Ordering<50> betweenness_ordering(16, beta, graph, numOfVertices);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string labelFile(labelFileName);
                             labelFile.append(".label");
@@ -553,7 +555,7 @@ namespace command{
                             vector<NodeID> border(numOfVertices);
                             Coverage_Ordering_BP<50> coverage_ordering(graph, border);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string labelFile(labelFileName);
                             labelFile.append(".label");
@@ -573,7 +575,7 @@ namespace command{
                             Degree_Ordering degree_order(graph);
 	                        CPL pl(graph, degree_order, false, DIRECTED_FLAG);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -587,7 +589,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
 	                        Betweenness_Ordering betweenness_ordering(16, beta, graph, numOfVertices, 10, 8 , false, true);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -600,7 +602,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                         	Coverage_Ordering_Compress coverage_ordering(graph, true, false); 
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -619,7 +621,7 @@ namespace command{
                             Degree_Ordering degree_order(wgraph);
                            	CPL_W pl(wgraph, degree_order, false); 
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -633,7 +635,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                            	Betweenness_Ordering betweenness_ordering(16, beta, wgraph, numOfVertices, 10, 8 , false, false);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -646,7 +648,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                         	Coverage_Ordering_Compress coverage_ordering(wgraph, false, false);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -663,7 +665,7 @@ namespace command{
                             Degree_Ordering degree_order(graph);
                             CPL pl(graph, degree_order, false); 
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -677,7 +679,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
 	                        Betweenness_Ordering betweenness_ordering(16, beta, graph, numOfVertices, 10, 8 , false, false);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -691,7 +693,7 @@ namespace command{
                             vector<NodeID> border(numOfVertices);
                             Coverage_Ordering_Compress coverage_ordering(graph);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -715,7 +717,7 @@ namespace command{
                             Degree_Ordering degree_order(graph);
 	                        CPL pl(graph, degree_order, true, DIRECTED_FLAG);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -729,7 +731,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
 	                        Betweenness_Ordering betweenness_ordering(16, beta, graph, numOfVertices, 10, 8 , true, true);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -742,7 +744,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                         	Coverage_Ordering_Compress coverage_ordering(graph, true, true); 
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -761,7 +763,7 @@ namespace command{
                             Degree_Ordering degree_order(wgraph);
                            	CPL_W pl(wgraph, degree_order, true); 
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -775,7 +777,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                            	Betweenness_Ordering betweenness_ordering(16, beta, wgraph, numOfVertices, 10, 8 , true, false);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -788,7 +790,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
                         	Coverage_Ordering_Compress coverage_ordering(wgraph, false, true);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -805,7 +807,7 @@ namespace command{
                             Degree_Ordering degree_order(graph);
                             CPL pl(graph, degree_order, true); 
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
@@ -819,7 +821,7 @@ namespace command{
                             double _labeling_time = GetCurrentTimeSec();
 	                        Betweenness_Ordering betweenness_ordering(16, beta, graph, numOfVertices, 10, 8 , true, false);
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");
                             betweenness_ordering.save_rank(orderFileName.c_str());
@@ -833,7 +835,7 @@ namespace command{
                             vector<NodeID> border(numOfVertices);
                             Coverage_Ordering_Compress coverage_ordering(graph, false, true); 
                             _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                            cout << "Indexing time:" << _labeling_time << endl;
+                            cout << "Indexing_time: " << _labeling_time << endl;
                             
                             string orderFileName(labelFileName);
                             orderFileName.append(".order");

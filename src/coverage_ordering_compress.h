@@ -2916,7 +2916,7 @@ class Coverage_Ordering_Compress : public COrdering_C {
 			tmp_idx[v].second.shrink_to_fit();
 		}
 		
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;*/
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices - 1 << endl;*/
 
 	}
 	
@@ -3070,7 +3070,7 @@ class Coverage_Ordering_Compress : public COrdering_C {
 		cout << clabels.r_numOfTokens << " Tokens in total" << endl;
 		cout << (double)r_children_size / (double) clabels.r_numOfTokens << " average children number" << endl;
 		
-		//cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		//cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices - 1 << endl;
 	}
 	
 	Coverage_Ordering_Compress(Graph& graph, bool directed_flag = false, bool second_level_flag = false){

@@ -1401,7 +1401,7 @@ class Coverage_Ordering_Path : public COrdering_P {
 			tmp_idx_parents[v].first.shrink_to_fit();
 			tmp_idx_parents[v].second.shrink_to_fit();
 		}
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices - 1 << endl;
 	}
 	
 	void directed_unweighted_sigpath(Graph& graph){
@@ -1647,7 +1647,7 @@ class Coverage_Ordering_Path : public COrdering_P {
 			r_tmp_idx_parents[v].second.shrink_to_fit();	
 		}
 		amount = (double)(amount) / 2;
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices - 1 << endl;
 	}
 	
 	
@@ -1838,7 +1838,7 @@ class Coverage_Ordering_Path : public COrdering_P {
 			tmp_idx_parents[v].first.shrink_to_fit();
 			tmp_idx_parents[v].second.shrink_to_fit();
 		}
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices - 1 << endl;
 	}
 	
 	void directed_weighted_sigpath(WGraph& wgraph){
@@ -2070,7 +2070,7 @@ class Coverage_Ordering_Path : public COrdering_P {
 			r_tmp_idx_parents[v].second.shrink_to_fit();	
 		}
 		amount = (double)(amount) / 2;
-		cout << "avg label size:" << (double)(amount)/(double)numOfVertices - 1 << endl;
+		cout << "avg_label_size: " << (double)(amount)/(double)numOfVertices - 1 << endl;
 	}
 		
 

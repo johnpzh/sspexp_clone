@@ -120,7 +120,7 @@ namespace command{
                         Given_Ordering given_order(orderFileName, wgraph);
                     	PL_W pl_w(wgraph, given_order, DIRECTED_FLAG);
                         _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                        cout << "Indexing time:" << _labeling_time << endl;
+                        cout << "Indexing_time: " << _labeling_time << endl;
                         
                         string labelFile(labelFileName);
                         labelFile.append(".label");
@@ -132,7 +132,7 @@ namespace command{
                         double _contracting_time = 0; 
                         Bottomup bu(chgraph, given_order, _contracting_time);
                         _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                        cout << "Indexing time:" << _labeling_time << endl;
+                        cout << "Indexing_time: " << _labeling_time << endl;
                         cout << "Contracting time:" << _contracting_time << endl;
                         
                         string labelFile(labelFileName);
@@ -146,7 +146,7 @@ namespace command{
                         Given_Ordering given_order(orderFileName, graph);
                     	PL pl(graph, given_order, DIRECTED_FLAG);
                         _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                        cout << "Indexing time:" << _labeling_time << endl;
+                        cout << "Indexing_time: " << _labeling_time << endl;
                         
                         string labelFile(labelFileName);
                         labelFile.append(".label");
@@ -158,7 +158,7 @@ namespace command{
                         double _contracting_time = 0; 
                         Bottomup bu(chgraph, given_order, _contracting_time);
                         _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                        cout << "Indexing time:" << _labeling_time << endl;
+                        cout << "Indexing_time: " << _labeling_time << endl;
                         cout << "Contracting time:" << _contracting_time << endl;
                         
                         string labelFile(labelFileName);
@@ -174,7 +174,7 @@ namespace command{
                         Given_Ordering given_order(orderFileName, wgraph);
                     	PL_W pl_w(wgraph, given_order);
                         _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                        cout << "Indexing time:" << _labeling_time << endl;
+                        cout << "Indexing_time: " << _labeling_time << endl;
                         
                         string labelFile(labelFileName);
                         labelFile.append(".label");
@@ -186,7 +186,7 @@ namespace command{
                         double _contracting_time = 0; 
                         Bottomup bu(chgraph, given_order, _contracting_time);
                         _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                        cout << "Indexing time:" << _labeling_time << endl;
+                        cout << "Indexing_time: " << _labeling_time << endl;
                         cout << "Contracting time:" << _contracting_time << endl;
                         
                         string labelFile(labelFileName);
@@ -200,7 +200,7 @@ namespace command{
                         Given_Ordering given_order(orderFileName, graph);
                     	PL pl(graph, given_order);
                         _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                        cout << "Indexing time:" << _labeling_time << endl;
+                        cout << "Indexing_time: " << _labeling_time << endl;
                         
                         string labelFile(labelFileName);
                         labelFile.append(".label");
@@ -212,7 +212,7 @@ namespace command{
                         double _contracting_time = 0; 
                         Bottomup bu(chgraph, given_order, _contracting_time);
                         _labeling_time = GetCurrentTimeSec() - _labeling_time;
-                        cout << "Indexing time:" << _labeling_time << endl;
+                        cout << "Indexing_time: " << _labeling_time << endl;
                         cout << "Contracting time:" << _contracting_time << endl;
                         
                         string labelFile(labelFileName);
